@@ -9,10 +9,12 @@ const aliasList = Object.entries({
   '+': ['next']
 })
 
+const placeholderElements = ['view', 'text']
 // https://developers.weixin.qq.com/miniprogram/dev/component/cover-image.html
 const elements = [
   // general selector
-  ''
+  '',
+  ...placeholderElements
 ]
 
 type AddVariantParams = [string, string | string[]]
@@ -21,10 +23,19 @@ export const variants = elements.map((element) => {
   return aliasList.map<AddVariantParams[]>(([selector, aliases]) => {
     return aliases.map<AddVariantParams>((alias) => {
       const variant = alias + (element ? `-${element}` : '')
-      const base = `:where(&) ${selector} ${element}:where(:not(.not-${variant}))`
+      const base =
+        `& ${selector} ` + element
+          ? `${element}::not(.not-${variant})`
+          : placeholderElements
+            .map((element) => `${element}::not(.not-${variant})`)
+            .join(',')
       const added = {
-        '~': `:where(&:not(.not-${variant}))`,
-        ' ': `:where(&) ${selector} :where(:not(.not-${variant})) ${element}`
+        '~': `&:not(.not-${variant})`,
+        ' ':
+          `& ${selector}` +
+          ` ${placeholderElements.map(
+            (x) => `${x}:not(.not-${variant}) ${element}`
+          ).join(',')}`
       }[selector]
 
       return [variant, added ? [base, added] : base]
