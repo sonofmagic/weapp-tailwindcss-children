@@ -1,11 +1,7 @@
-export const foo = 'bar'
-
-export const wait = (timeout?: number) => {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve(true)
-    }, timeout)
+import plugin from 'tailwindcss/plugin.js'
+import { each } from './variants'
+export default plugin(({ addVariant }) =>
+  each((x) => {
+    addVariant(...x)
   })
-}
-
-export * from '@/util'
+)

@@ -1,12 +1,16 @@
-import { foo, wait } from '@/index'
+import { variants, each } from '@/variants'
 
 describe('[Default]', () => {
-  test('foo should be bar', () => {
-    expect(foo).toBe('bar')
+  test('variants', () => {
+    console.log(variants)
+    expect(variants).toBe('variants')
   })
 
-  test('wait 100ms', async () => {
-    const flag = await wait(100)
-    expect(flag).toBe(true)
+  test('callback', () => {
+    const arr: any[] = []
+    each((x) => {
+      arr.push(x)
+    })
+    expect(arr).toBe([])
   })
 })
