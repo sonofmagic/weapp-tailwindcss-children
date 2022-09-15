@@ -1,7 +1,7 @@
 {
   "name": "weapp-tailwindcss-children",
-  "version": "0.0.1",
-  "description": "weapp-tailwindcss-children",
+  "version": "0.1.0",
+  "description": "weapp-tailwindcss-children 增强 tailwindcss 的小程序的选择器",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "types": "types/index.d.ts",
@@ -27,7 +27,15 @@
     "access": "public",
     "registry": "https://registry.npmjs.org"
   },
-  "keywords": [],
+  "keywords": [
+    "weapp",
+    "mini",
+    "tailwindcss",
+    "plugin",
+    "variants",
+    "child",
+    "miniprogram"
+  ],
   "author": "SonOfMagic <qq1324318532@gmail.com>",
   "license": "MIT",
   "bugs": {
@@ -67,7 +75,7 @@
     "typescript": "^4.8.2",
     "typescript-transform-paths": "^3.3.1"
   },
-  "dependencies": {
-    "tailwindcss": "^3.1.8"
+  "peerDependencies": {
+    "tailwindcss": "^3.0.0"
   }
 }
