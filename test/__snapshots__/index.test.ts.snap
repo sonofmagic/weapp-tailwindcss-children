@@ -1,0 +1,416 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[Default] callback 1`] = `
+Array [
+  Array [
+    "children",
+    Array [
+      "& > view:not(.not-children)",
+      "& > text:not(.not-children)",
+    ],
+  ],
+  Array [
+    "child",
+    Array [
+      "& > view:not(.not-child)",
+      "& > text:not(.not-child)",
+    ],
+  ],
+  Array [
+    "heir",
+    Array [
+      "& view:not(.not-heir)",
+      "& text:not(.not-heir)",
+    ],
+  ],
+  Array [
+    "descendant",
+    Array [
+      "& view:not(.not-descendant)",
+      "& text:not(.not-descendant)",
+    ],
+  ],
+  Array [
+    "sibling",
+    Array [
+      "& ~ view:not(.not-sibling)",
+      "& ~ text:not(.not-sibling)",
+    ],
+  ],
+  Array [
+    "twin",
+    Array [
+      "& ~ view:not(.not-twin)",
+      "& ~ text:not(.not-twin)",
+    ],
+  ],
+  Array [
+    "next",
+    Array [
+      "& + view:not(.not-next)",
+      "& + text:not(.not-next)",
+    ],
+  ],
+  Array [
+    "children-view",
+    Array [
+      "& > view:not(.not-children-view)",
+    ],
+  ],
+  Array [
+    "child-view",
+    Array [
+      "& > view:not(.not-child-view)",
+    ],
+  ],
+  Array [
+    "heir-view",
+    Array [
+      "& view:not(.not-heir-view)",
+    ],
+  ],
+  Array [
+    "descendant-view",
+    Array [
+      "& view:not(.not-descendant-view)",
+    ],
+  ],
+  Array [
+    "sibling-view",
+    Array [
+      "& ~ view:not(.not-sibling-view)",
+    ],
+  ],
+  Array [
+    "twin-view",
+    Array [
+      "& ~ view:not(.not-twin-view)",
+    ],
+  ],
+  Array [
+    "next-view",
+    Array [
+      "& + view:not(.not-next-view)",
+    ],
+  ],
+  Array [
+    "children-text",
+    Array [
+      "& > text:not(.not-children-text)",
+    ],
+  ],
+  Array [
+    "child-text",
+    Array [
+      "& > text:not(.not-child-text)",
+    ],
+  ],
+  Array [
+    "heir-text",
+    Array [
+      "& text:not(.not-heir-text)",
+    ],
+  ],
+  Array [
+    "descendant-text",
+    Array [
+      "& text:not(.not-descendant-text)",
+    ],
+  ],
+  Array [
+    "sibling-text",
+    Array [
+      "& ~ text:not(.not-sibling-text)",
+    ],
+  ],
+  Array [
+    "twin-text",
+    Array [
+      "& ~ text:not(.not-twin-text)",
+    ],
+  ],
+  Array [
+    "next-text",
+    Array [
+      "& + text:not(.not-next-text)",
+    ],
+  ],
+]
+`;
+
+exports[`[Default] createVariants 1`] = `
+Array [
+  Array [
+    Array [
+      Array [
+        "children",
+        Array [
+          "& > view:not(.not-children)",
+        ],
+      ],
+      Array [
+        "child",
+        Array [
+          "& > view:not(.not-child)",
+        ],
+      ],
+    ],
+    Array [
+      Array [
+        "heir",
+        Array [
+          "& view:not(.not-heir)",
+        ],
+      ],
+      Array [
+        "descendant",
+        Array [
+          "& view:not(.not-descendant)",
+        ],
+      ],
+    ],
+    Array [
+      Array [
+        "sibling",
+        Array [
+          "& ~ view:not(.not-sibling)",
+        ],
+      ],
+      Array [
+        "twin",
+        Array [
+          "& ~ view:not(.not-twin)",
+        ],
+      ],
+    ],
+    Array [
+      Array [
+        "next",
+        Array [
+          "& + view:not(.not-next)",
+        ],
+      ],
+    ],
+  ],
+  Array [
+    Array [
+      Array [
+        "children-view",
+        Array [
+          "& > view:not(.not-children-view)",
+        ],
+      ],
+      Array [
+        "child-view",
+        Array [
+          "& > view:not(.not-child-view)",
+        ],
+      ],
+    ],
+    Array [
+      Array [
+        "heir-view",
+        Array [
+          "& view:not(.not-heir-view)",
+        ],
+      ],
+      Array [
+        "descendant-view",
+        Array [
+          "& view:not(.not-descendant-view)",
+        ],
+      ],
+    ],
+    Array [
+      Array [
+        "sibling-view",
+        Array [
+          "& ~ view:not(.not-sibling-view)",
+        ],
+      ],
+      Array [
+        "twin-view",
+        Array [
+          "& ~ view:not(.not-twin-view)",
+        ],
+      ],
+    ],
+    Array [
+      Array [
+        "next-view",
+        Array [
+          "& + view:not(.not-next-view)",
+        ],
+      ],
+    ],
+  ],
+]
+`;
+
+exports[`[Default] variants 1`] = `
+Array [
+  Array [
+    Array [
+      Array [
+        "children",
+        Array [
+          "& > view:not(.not-children)",
+          "& > text:not(.not-children)",
+        ],
+      ],
+      Array [
+        "child",
+        Array [
+          "& > view:not(.not-child)",
+          "& > text:not(.not-child)",
+        ],
+      ],
+    ],
+    Array [
+      Array [
+        "heir",
+        Array [
+          "& view:not(.not-heir)",
+          "& text:not(.not-heir)",
+        ],
+      ],
+      Array [
+        "descendant",
+        Array [
+          "& view:not(.not-descendant)",
+          "& text:not(.not-descendant)",
+        ],
+      ],
+    ],
+    Array [
+      Array [
+        "sibling",
+        Array [
+          "& ~ view:not(.not-sibling)",
+          "& ~ text:not(.not-sibling)",
+        ],
+      ],
+      Array [
+        "twin",
+        Array [
+          "& ~ view:not(.not-twin)",
+          "& ~ text:not(.not-twin)",
+        ],
+      ],
+    ],
+    Array [
+      Array [
+        "next",
+        Array [
+          "& + view:not(.not-next)",
+          "& + text:not(.not-next)",
+        ],
+      ],
+    ],
+  ],
+  Array [
+    Array [
+      Array [
+        "children-view",
+        Array [
+          "& > view:not(.not-children-view)",
+        ],
+      ],
+      Array [
+        "child-view",
+        Array [
+          "& > view:not(.not-child-view)",
+        ],
+      ],
+    ],
+    Array [
+      Array [
+        "heir-view",
+        Array [
+          "& view:not(.not-heir-view)",
+        ],
+      ],
+      Array [
+        "descendant-view",
+        Array [
+          "& view:not(.not-descendant-view)",
+        ],
+      ],
+    ],
+    Array [
+      Array [
+        "sibling-view",
+        Array [
+          "& ~ view:not(.not-sibling-view)",
+        ],
+      ],
+      Array [
+        "twin-view",
+        Array [
+          "& ~ view:not(.not-twin-view)",
+        ],
+      ],
+    ],
+    Array [
+      Array [
+        "next-view",
+        Array [
+          "& + view:not(.not-next-view)",
+        ],
+      ],
+    ],
+  ],
+  Array [
+    Array [
+      Array [
+        "children-text",
+        Array [
+          "& > text:not(.not-children-text)",
+        ],
+      ],
+      Array [
+        "child-text",
+        Array [
+          "& > text:not(.not-child-text)",
+        ],
+      ],
+    ],
+    Array [
+      Array [
+        "heir-text",
+        Array [
+          "& text:not(.not-heir-text)",
+        ],
+      ],
+      Array [
+        "descendant-text",
+        Array [
+          "& text:not(.not-descendant-text)",
+        ],
+      ],
+    ],
+    Array [
+      Array [
+        "sibling-text",
+        Array [
+          "& ~ text:not(.not-sibling-text)",
+        ],
+      ],
+      Array [
+        "twin-text",
+        Array [
+          "& ~ text:not(.not-twin-text)",
+        ],
+      ],
+    ],
+    Array [
+      Array [
+        "next-text",
+        Array [
+          "& + text:not(.not-next-text)",
+        ],
+      ],
+    ],
+  ],
+]
+`;

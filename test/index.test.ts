@@ -1,16 +1,23 @@
-import { variants, each } from '@/variants'
+import { variants, each, createVariants } from '@/variants'
 
 describe('[Default]', () => {
   test('variants', () => {
-    console.log(variants)
-    expect(variants).toBe('variants')
+    expect(variants).toMatchSnapshot()
   })
 
   test('callback', () => {
     const arr: any[] = []
-    each((x) => {
+    each(variants, (x) => {
       arr.push(x)
     })
-    expect(arr).toBe([])
+    expect(arr).toMatchSnapshot()
+  })
+
+  test('createVariants', () => {
+    expect(
+      createVariants({
+        fallbackElements: ['view']
+      })
+    ).toMatchSnapshot()
   })
 })
